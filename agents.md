@@ -242,6 +242,25 @@ verification, or review provides material value.
 - Editing delegation additionally follows the controlled-worktree contract
   below. Read-only subagents do not require worktrees.
 
+### Model And Reasoning Calibration
+
+Use the lowest model and reasoning effort that reliably produces the required
+outcome. Calibrate to ambiguity, diagnostic difficulty, architecture impact,
+data risk, irreversibility, verification strength, and value, not code or diff
+size alone.
+
+- Use Luna for mechanical, repeatable work with precise expected output and
+  reliable verification.
+- Use Terra with medium reasoning as the default for bounded, explicit,
+  verifiable implementation. Use Terra with high reasoning when moderate
+  uncertainty or direct commit and push raises the value of additional checks.
+- Reserve Sol with high reasoning for ambiguous, difficult, architecturally
+  consequential, or especially high-value work that benefits materially from
+  deeper judgment and polish.
+- A small change may still require stronger reasoning when it touches user data,
+  irreversible operations, difficult diagnosis, or uncertain product and
+  architecture boundaries.
+
 ## Git Conventions
 
 - Write clear, concise commit messages in English.
