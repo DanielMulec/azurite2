@@ -10,8 +10,9 @@
   },
   "scripts": {
     "check:active-slice-lines": "tsx scripts/check-active-slice-lines.ts",
+    "test:codex-hooks": "/usr/bin/python3 .codex/hooks/test_azurite_title_prefix.py",
     "typecheck:scripts": "tsc --noEmit -p tsconfig.json",
-    "validate": "pnpm typecheck:scripts && pnpm check:active-slice-lines"
+    "validate": "pnpm typecheck:scripts && pnpm check:active-slice-lines && pnpm test:codex-hooks"
   },
   "devDependencies": {
     "@types/node": "^26.1.0",
