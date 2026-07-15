@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.playwright-cli/
+.playwright-mcp/
+/output/playwright/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.log
+
+# Generated Codex Desktop hook bundles are not Azurite source files.
+/codex-micro-*.js
+/thread-app-shell-chrome-*.js
