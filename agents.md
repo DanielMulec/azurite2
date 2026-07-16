@@ -2,13 +2,16 @@
 
 ## Project Status
 
-Azurite currently has a working markdown discovery, reading, editing, manual
-save, URL navigation, and browser draft-recovery baseline. Product direction is
-documented in `docs/product-vision.md` and `docs/product-capability-map.md`,
-current architecture in `docs/technical-architecture.md`, engineering rules in
-`docs/engineering-standards.md`, and the product-slice workflow in
-`docs/working-agreement.md`. Active, planned, and completed slices are indexed
-in `docs/slices/README.md`; reusable research sources are indexed in
+Azurite is restarting from an accepted product baseline without product
+application code. This repository currently contains authoritative product and
+engineering documentation, governance tooling, and Codex hooks. Product
+direction is documented in `docs/product-vision.md` and
+`docs/product-capability-map.md`. `docs/technical-architecture.md` is a
+historical baseline that must be re-established against the accepted product
+vision before implementation begins. Engineering rules live in
+`docs/engineering-standards.md`, and the product-slice workflow lives in
+`docs/working-agreement.md`. Active, planned, and completed delivery work is
+indexed in `docs/slices/README.md`; reusable research sources are indexed in
 `docs/research-sources.md`.
 
 ## Working Guidelines
