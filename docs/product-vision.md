@@ -28,17 +28,18 @@ programmatic capabilities:
 - Fast indexing of documents, links, tags, metadata, headings, and references.
 - Graph-aware behavior for links, backlinks, unresolved links, and relationship
   exploration.
-- Cluster-level organization similar to Obsidian vaults, using Azurite's own
-  product language instead of Obsidian's "vault" terminology.
+- Cluster-based organization through Azurite's own model and product language,
+  while targeting Obsidian-level knowledge-management capability.
 - LSP-like knowledge services where useful, such as link resolution, reference
   lookup, rename support, diagnostics for broken links, document symbols,
   completions, and hover metadata.
 - Derived indexes and caches may exist, but they must be rebuildable from the
   markdown source.
 
-Use "cluster" as the user-facing product term for Azurite's version of an
-Obsidian vault. A cluster is a self-contained folder-backed collection of
-markdown knowledge, configuration, indexes, and graph state. Current code and
+An Azurite Cluster is a coherent, portable knowledge domain with canonical
+markdown content and independently usable files. The authoritative definitions
+for clusters, veins, and lodes live in the
+[product-language reference](reference/product-language.md). Current code and
 API contracts may still use "workspace" as the implementation term until a
 focused rename slice updates those contracts deliberately.
 

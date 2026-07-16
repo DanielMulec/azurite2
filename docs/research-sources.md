@@ -24,6 +24,7 @@ exclusive source list.
 - [Engineering quality](research/engineering-quality.md)
 - [Knowledge and indexing](research/knowledge-and-indexing.md)
 - [Observability](research/observability.md)
+- [Product language](research/product-language.md)
 
 Add new entries to the narrowest relevant domain catalog. Add a new domain only
 when an existing catalog would become conceptually mixed.

@@ -5,12 +5,13 @@ reuse across implementation slices.
 
 Use reference docs for facts that code, tests, docs, and future UI work should
 name consistently, such as API error codes, route shapes, reserved workspace
-names, and runtime messages.
+names, product terms, and runtime messages.
 
 Current reference pages:
 
 - `api-errors.md`
 - `api-routes.md`
+- `product-language.md`
 - `product-guardrails.md`
 - `runtime-messages.md`
 - `workspace-rules.md`

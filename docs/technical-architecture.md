@@ -65,6 +65,10 @@ observability SDKs.
 
 ## Product Terminology
 
+The [product-language reference](reference/product-language.md) owns the
+authoritative definitions for clusters, veins, and lodes. This architecture
+document records their current implementation mapping.
+
 "Cluster" is the user-facing term for Azurite's folder-backed knowledge
 container. "Workspace" remains the current implementation and API term until a
 focused rename updates schemas, routes, tests, environment variables, and UI

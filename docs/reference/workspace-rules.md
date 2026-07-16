@@ -10,8 +10,10 @@ The main code source of truth is `@azurite/shared`.
 
 ## Terminology
 
-"Cluster" is the user-facing product term for Azurite's version of an Obsidian
-vault.
+Azurite's authoritative definitions for clusters, veins, and lodes live in the
+[product-language reference](product-language.md). A cluster is the user-facing
+product term for the coherent knowledge domain rooted at the configured
+filesystem location.
 
 "Workspace" is the current implementation and API term for the configured
 filesystem root that contains notes. Keep using the implementation term in code
