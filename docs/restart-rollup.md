@@ -38,15 +38,30 @@ observability may each own the live, durable, addressable, derived, or
 diagnostic state required for a fluent and dependable PWA. Their exact
 responsibilities remain an architecture decision for the restart.
 
+The PWA's product role is exclusively frontend presentation and interaction.
+References to application state or browser technology do not assign cluster
+storage, lode storage, knowledge-service runtime, or agent-runtime ownership to
+the PWA.
+
 ### Cross-Device Experience
 
-Azurite is the same PWA across desktop and mobile. The intended human
-experience is that the product, account, knowledge, context, and work are simply
-available across devices.
+Azurite presents the same PWA frontend across desktop and mobile. Clusters live
+as ordinary local filesystem material on the user's devices. The hosted
+frontend and the optional hosted synchronization service are distinct product
+capabilities.
 
-Do not frame this as a manual or product-visible data handoff between separate
-applications. The future product and identity architecture must determine how
-the seamless shared experience is delivered.
+The synchronization service follows the product role established by Obsidian
+Sync: it keeps authorized local cluster copies current across devices. An edit
+inside a cluster on one device propagates to its synchronized local copies on
+the other authorized devices. Azurite then converges every affected link,
+backlink, reference, tag, metadata view, search result, graph, vein, lode, and
+piece of assembled context wherever the relevant clusters are authorized and
+available.
+
+The experience has no manual or product-visible handoff ritual. Technical
+architecture must determine how the hosted frontend reaches device-local
+cluster capabilities and how file, index, relationship, and context convergence
+is delivered dependably.
 
 ### Product Horizon
 
@@ -57,7 +72,8 @@ product. The fuller vision includes, among other areas:
   metadata, references, and knowledge services;
 - a highly polished, performant, fluent, Notion-quality document and knowledge
   experience;
-- one coherent desktop and mobile PWA experience;
+- one coherent desktop and mobile PWA frontend experience over local cluster
+  material;
 - event-driven integration between Azurite, Codex, supported ChatGPT surfaces,
   API-key LLM providers, and future agent workflows; and
 - private, local-first operation with Tailscale-oriented access and durable user
@@ -125,6 +141,15 @@ A future long-running CTO task should translate accepted product horizons into
 durable, understandable architecture. Its mandate must explicitly combine speed,
 quality, performance, and simplicity without recreating review-driven scope
 inflation.
+
+The next CTO must preserve the settled product boundary that the PWA is
+exclusively the frontend and clusters remain local filesystem material on user
+devices. The architecture must determine how self-hosted and Azurite-hosted
+frontends reach local cluster capabilities, where knowledge services and agent
+participation execute, and how the optional Obsidian Sync-style service produces
+both file convergence and automatic relational convergence across authorized
+devices. The product decision does not prescribe whether that convergence uses
+synchronized state, events, local reconstruction, or another mechanism.
 
 Researchers, implementers, and reviewers should normally be bounded tasks with
 clear outputs rather than additional permanent leadership centers.

@@ -28,12 +28,19 @@ groupings. An **Azurite Cluster** is one coherent, portable knowledge domain.
 Markdown files remain the canonical, portable representation of
 Azurite-authored knowledge. Original code, PDFs, images, recordings, datasets,
 and other native files remain canonical source artifacts for their own content.
-Azurite may maintain rich application state and rebuildable derived state around
-those files without compromising their independent use.
+On every device where a cluster participates, that material lives as ordinary
+local filesystem content. Azurite may maintain rich application state and
+rebuildable derived state around those files without compromising their
+independent use.
 
 A cluster can be a dedicated notes collection, a project Git repository,
 LLMWiki, or another knowledge collection. It remains usable through ordinary
 filesystem tools and through its own native workflows when Azurite is absent.
+An optional hosted synchronization service can keep authorized local copies of
+the same cluster current across devices. A change to any synchronized copy
+propagates to the others and causes affected knowledge and relationships to
+reconcile automatically wherever the relevant clusters are authorized and
+available.
 
 Obsidian's vault is a capability benchmark for knowledge management. Azurite
 uses its own cluster model, formats, ontology, and brand language while pursuing
@@ -90,6 +97,11 @@ It does not prescribe storage, indexing, synchronization, graph, or deployment
 architecture, and it does not merge the participating clusters into one
 knowledge domain.
 
+When synchronized cluster changes alter materialized cross-cluster veins, the
+corresponding lode topology and affected relational experiences converge
+automatically across authorized devices where the participating clusters are
+available. Synchronization does not turn the lode into a cloud-hosted container.
+
 ## Access And Authorization
 
 A vein or membership in a lode never grants access by itself. Human and agent
@@ -107,9 +119,11 @@ original source material, relationships, history, active work, and authorized
 context across clusters, lodes, devices, people, agents, automations, and time.
 
 Azurite maintains and routes this fabric. Agents and automations notice,
-interpret, decide, and act through it. The term does not give Azurite itself a
-mandatory assistant persona or imply that every context source is visible to
-every participant.
+interpret, decide, and act through it. The PWA frontend presents and provides
+human interaction with the fabric without owning the local cluster material or
+the knowledge-service runtime. The term does not give Azurite itself a mandatory
+assistant persona or imply that every context source is visible to every
+participant.
 
 ## Azurite Module
 

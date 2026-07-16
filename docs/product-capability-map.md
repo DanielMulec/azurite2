@@ -13,6 +13,9 @@ in the [product-language reference](reference/product-language.md).
 ## How To Read The Map
 
 - Capabilities describe user outcomes. Architecture owns their mechanisms.
+- The Azurite PWA is exclusively the shared frontend. Clusters remain local
+  filesystem material, and the systems that provide knowledge and agent
+  capabilities sit behind that frontend under separately defined architecture.
 - The horizons describe increasing product completeness, not dates or delivery
   sequence.
 - Obsidian and Notion are benchmark references. Azurite retains its own
@@ -36,13 +39,14 @@ in the [product-language reference](reference/product-language.md).
 Azurite is an exceptional file-native knowledge environment for humans. It
 provides complete knowledge lifecycle, Obsidian-level knowledge mechanics,
 Notion-level interaction quality, original source-artifact support, dependable
-recovery, and one coherent PWA experience.
+recovery, locally resident clusters, and one coherent PWA frontend experience.
 
 ### Connected Context
 
 Clusters participate in lodes. Search, navigation, graphs, references,
 automations, and Modules operate across deliberately authorized boundaries.
-Context remains continuous across devices and product surfaces.
+Optional hosted synchronization keeps authorized local cluster copies and all
+affected relational knowledge current across devices and product surfaces.
 
 ### Agent-Native Work
 
@@ -99,6 +103,15 @@ message. The original recording can be retained when useful. An agent can return
 text plus optional generated speech, allowing the person to listen instead of
 reading. The same context and result remain available on every device.
 
+### An Edit Across Devices
+
+A person edits a file in a synchronized cluster on their phone. The file change
+reaches the local copy of that cluster on their laptop. Azurite automatically
+refreshes every affected link, backlink, reference, tag, metadata view, search
+result, graph, vein, lode, and assembled context wherever the relevant clusters
+are authorized and available. The person encounters one current knowledge
+world without manually rebuilding or reconnecting anything.
+
 ### The Sunday Return
 
 When the person returns after time away, Azurite presents an attributable
@@ -118,6 +131,9 @@ dependent on Azurite.
 
 - Adopt an existing notes folder, Git repository, project directory, synced
   folder, external drive, or other coherent file domain as a cluster.
+- Keep each participating cluster as ordinary local filesystem material on the
+  user's device, including when an authorized synchronized copy exists on other
+  devices.
 - Create, identify, open, rename, move, copy, archive, detach, and deliberately
   remove clusters without confusing the cluster with the files it contains.
 - Keep ordinary filesystem and native-tool workflows working when Azurite is
@@ -132,12 +148,16 @@ dependent on Azurite.
   which it came.
 - Detect and reconcile changes made by editors, Git, scripts, sync tools,
   agents, and other external applications.
+- Synchronize a change made to one authorized local cluster copy to the other
+  authorized devices that carry that cluster.
+- Automatically converge the affected knowledge and relationships after a
+  synchronized change, including across available clusters in the same lode.
 - Keep derived indexes, thumbnails, embeddings, caches, and previews separable
   from canonical material.
 - Give durable product state an explicit ownership and portability contract when
   its loss would destroy user value.
-- Support import, export, backup, restoration, and movement between hosted and
-  self-hosted worlds without knowledge lock-in.
+- Support import, export, backup, restoration, and movement among self-hosted,
+  Azurite-hosted frontend, and synchronized operation without knowledge lock-in.
 
 ## 2. Complete Knowledge Lifecycle
 
@@ -158,6 +178,8 @@ leaving broken references or silent loss behind.
 - Create and use templates, recurring notes, daily notes, quick capture,
   snippets, commands, and bulk operations.
 - Preserve links and references through rename and move operations.
+- Reconcile links, backlinks, references, tags, metadata, search, graphs, veins,
+  and lodes automatically after local, external, or synchronized changes.
 - Surface malformed content, unresolved links, conflicts, external changes, and
   partial failures honestly.
 - Provide version history, draft recovery, undo, comparison, and deliberate
@@ -187,6 +209,8 @@ product world.
 - Full-text, metadata, filename, path, property, scoped, and semantic search.
 - Local graphs, cluster graphs, lode graphs, filtering, grouping, traversal,
   neighborhood exploration, and meaningful visual explanations.
+- Automatic refresh of knowledge indexes, navigation, and relational views when
+  synchronized files change on another device.
 - Unresolved-link discovery, broken-reference diagnostics, rename intelligence,
   reference lookup, document symbols, completions, and contextual hover
   information.
@@ -239,6 +263,8 @@ provenance, or authorization.
   every source traceable.
 - Let lodes emerge from materialized cross-cluster veins and support future
   named or deliberately scoped lode experiences.
+- Propagate and reconcile relationship changes automatically across authorized
+  devices where the participating synchronized clusters are available.
 - Preserve participating clusters as independently usable domains.
 - Make relationship visibility and content authorization separate controls.
 
@@ -313,6 +339,9 @@ owned, attributable, and inspectable.
 
 - Continuously discover and refresh files, metadata, relationships, active
   work, linked sessions, source artifacts, and authorized external updates.
+- Reconcile synchronized file changes into the current context fabric on every
+  authorized device without a manual indexing or relationship-maintenance
+  ritual.
 - Assemble relevant context around a task, file, person, persona, project,
   question, or conversation.
 - Preserve provenance from source artifact through extraction, synthesis,
@@ -356,6 +385,9 @@ rarely opens the Azurite interface.
 - Avoid provider lock-in by keeping the product promise harness-agnostic.
 - Let humans inspect and control which agents can read, write, act, subscribe,
   or cross cluster boundaries.
+- Preserve external and programmatic participation independently from the PWA
+  frontend, so a person's contextual workflows do not depend on keeping that
+  interface open.
 
 ## 9. Linked Sessions And Bidirectional Work
 
@@ -491,17 +523,24 @@ than a disconnected task database.
 - Project views that remain useful for purely human work as well as agent-heavy
   operation.
 
-## 14. One Product Across Devices
+## 14. One Frontend Across Devices
 
 ### Product Promise
 
-The human experience simply continues wherever the person is.
+The same PWA frontend presents a current local knowledge world wherever the
+person is.
 
 ### Capability Universe
 
-- The same account, clusters, lodes, knowledge, permissions, context, drafts,
-  sessions, and work state across desktop, phone, tablet, and future useful
+- The same Azurite PWA frontend across desktop, phone, tablet, and future useful
   PWA-capable surfaces.
+- Local filesystem copies of synchronized clusters on every authorized device
+  where those clusters participate.
+- Bidirectional file synchronization so an edit on any authorized device
+  reaches the other authorized local copies of that cluster.
+- Automatic relational convergence after synchronization, including affected
+  links, backlinks, references, tags, metadata, search, graphs, veins, lodes,
+  and context across locally available authorized clusters.
 - No product-visible export, import, or handoff ritual between devices.
 - Deep creation and multi-pane work on desktop.
 - Fluid capture, review, editing, voice, notifications, and agent interaction on
@@ -512,28 +551,36 @@ The human experience simply continues wherever the person is.
   continuation.
 - Notifications and resumable deep links that return the person to the exact
   relevant context.
-- Device-specific presentation without fragmenting the product into separate
-  applications or knowledge worlds.
+- Device-specific frontend presentation without fragmenting the product into
+  separate applications or knowledge worlds.
 
 ## 15. Accounts, Editions, And Distribution
 
 ### Product Promise
 
-Azurite can be self-owned, effortlessly hosted, and continuously dogfooded
-without changing the user's relationship to their knowledge.
+Azurite can be self-owned, use the same frontend through Azurite hosting, add
+optional synchronization, and be continuously dogfooded without changing the
+user's relationship to their local knowledge.
 
 ### Capability Universe
 
-- A polished open-source self-hosted edition suitable for serious daily use.
-- A hosted production edition with account login, cross-device continuity,
-  operational simplicity, and future subscription value.
-- Effectively unlimited clusters per account, bounded by chosen storage and
-  service realities rather than artificial organization limits.
-- Clear movement, backup, export, and restoration between hosted and self-hosted
-  operation.
+- A polished open-source self-hosted product environment suitable for serious
+  daily use and presented through the same PWA frontend.
+- An Azurite-hosted production PWA frontend that remains exclusively an
+  interface to the user's product environment.
+- An optional account-based synchronization service whose product role follows
+  the Obsidian Sync benchmark for keeping local cluster copies current across
+  devices.
+- Automatic propagation of file changes and convergence of affected knowledge
+  relationships across authorized devices.
+- Effectively unlimited synchronized clusters per account, bounded by chosen
+  storage and service realities rather than artificial organization limits.
+- Clear enrollment, removal, backup, restoration, and movement of synchronized
+  local clusters without transferring canonical ownership to the cloud service.
 - Private-by-default local and Tailscale-oriented use.
 - Deliberate sharing or public exposure when the product later supports it.
-- A production runtime independent from the source-development checkout.
+- A production frontend and supporting product environment independent from the
+  source-development checkout.
 - Daniel's own daily Azurite running through the real production distribution.
 - Transparent edition boundaries that preserve foundational sovereignty and
   avoid holding user knowledge hostage to a subscription.
@@ -576,6 +623,8 @@ what happened, and how to recover.
 
 - Per-cluster and cross-cluster authority for people, agents, Modules,
   automations, devices, and external services.
+- Device enrollment and synchronization authority that never expands cluster
+  or lode access implicitly.
 - A vein or lode membership never granting content access automatically.
 - Clear separation of authored fact, observed fact, inference, suggestion, and
   generated synthesis.
@@ -586,6 +635,8 @@ what happened, and how to recover.
   be reversed.
 - Visible conflicts, stale context, failed extraction, partial updates, and
   blocked work.
+- Inspectable synchronization and relational-reconciliation status when local
+  copies cannot converge cleanly.
 - No silent data loss, context corruption, privilege expansion, or promotion of
   inference into authored truth.
 - Deliberate containment of personal, coaching, therapy-support, financial,
@@ -609,6 +660,8 @@ Azurite earns daily trust through speed, resilience, clarity, and delight.
   long histories.
 - Dependable save, synchronization, recovery, conflict handling, and external
   file reconciliation.
+- Dependable cross-device convergence for both synchronized files and every
+  affected knowledge relationship.
 - Fresh indexes and explainable degradation when context is incomplete or
   rebuilding.
 - Robust behavior through reloads, reconnects, mobile lifecycle interruption,
@@ -629,7 +682,9 @@ Azurite earns daily trust through speed, resilience, clarity, and delight.
 - Cross-cluster context and lode exploration are first-class product territory.
 - External and embedded agents are participants in the knowledge model rather
   than chat windows attached to it.
-- One PWA delivers the product across devices and deployment choices.
+- One PWA frontend presents the product across devices and deployment choices.
+- Optional Obsidian Sync-style synchronization keeps device-local cluster
+  copies and their affected knowledge relationships current.
 - Obsidian compatibility may occur naturally through ordinary files, but it is
   not a governing constraint.
 
@@ -660,7 +715,7 @@ Azurite earns daily trust through speed, resilience, clarity, and delight.
 - Whether ordinary Markdown interchange is sufficient or selected Obsidian
   import and export behavior should become a deliberate capability.
 - Cluster identity and the user experience for nested, overlapping, copied, and
-  remotely hosted cluster roots.
+  synchronized local cluster roots.
 - Named, curated, task-scoped, and derived lode experiences beyond the settled
   geological vocabulary.
 - Which durable product truths require portable file representation, structured
@@ -668,7 +723,10 @@ Azurite earns daily trust through speed, resilience, clarity, and delight.
 - The exact boundary between universal capabilities and Azurite Modules.
 - The autonomy policies for thread creation, event delivery, canonical
   writeback, project-state changes, and multi-agent coordination.
-- The capability relationship between self-hosted and hosted editions.
+- The exact synchronized product state, if any, required beyond cluster files
+  for dependable cross-device continuity.
+- The account, enrollment, retention, versioning, recovery, and conflict
+  experience of the Obsidian Sync-style service.
 - The business model, subscription value, Module ecosystem, and commercial
   distribution.
 - The product and safety boundary for coaching and therapy-support Modules.

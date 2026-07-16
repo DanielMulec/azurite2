@@ -52,9 +52,10 @@ Azurite replaces that clerical burden with continuity:
 
 Users retain meaningful ownership of their knowledge and source material.
 Markdown, code, PDFs, images, audio, datasets, and other native files remain
-ordinary files that continue to work without Azurite. Rich application state
-may deepen the experience, but it must not imprison the user's knowledge in a
-hidden proprietary store.
+ordinary local files on the user's devices and continue to work without
+Azurite. A synchronized cluster can have a local copy on several authorized
+devices. Rich application state may deepen the experience, but it must not
+imprison the user's knowledge in a hidden proprietary store.
 
 ### Obsidian-Level Knowledge Power
 
@@ -87,12 +88,12 @@ Agents and automations may notice, interpret, propose, initiate, and update work
 through Azurite. Their authority is explicit and scoped. People can understand
 what acted, why it acted, what sources it used, and what it changed.
 
-### One Product Everywhere
+### One Frontend Everywhere
 
-Azurite is one coherent PWA across desktop, phone, tablet, and future
-PWA-capable surfaces. The same account, clusters, lodes, context, drafts, and
-ongoing work remain available without a visible handoff ritual. Each device may
-offer interaction depth appropriate to its form.
+Azurite presents one coherent PWA frontend across desktop, phone, tablet, and
+future PWA-capable surfaces. Synchronized local clusters and their connected
+context remain current across authorized devices without a visible handoff
+ritual. Each device may offer interaction depth appropriate to its form.
 
 ### Modular Extensibility
 
@@ -101,6 +102,32 @@ undifferentiated cockpit. Project management, embedded agents, coaching,
 codebase intelligence, document ingestion, and future specialist experiences
 can each become Modules while respecting the same file, provenance, and access
 promises.
+
+## Product Shape
+
+The Azurite PWA is exclusively the frontend. It presents interaction and
+visualizes product state. The product definition assigns no cluster storage,
+lode storage, knowledge-service runtime, or agent-runtime ownership to the PWA.
+Self-hosted and Azurite-hosted delivery provide the same frontend experience.
+
+Clusters live as ordinary local filesystem material on the user's devices.
+Their Markdown knowledge and original source artifacts remain locally usable
+without Azurite. Lodes connect independently usable clusters; they are not
+cloud-hosted containers that replace the participating local clusters.
+
+Azurite may provide an optional hosted synchronization service whose product
+role follows the Obsidian Sync benchmark. It synchronizes cluster files and
+their changes among authorized devices so that each local copy converges. When
+a synchronized change affects knowledge relationships or discoverability,
+Azurite automatically brings the corresponding links, backlinks, references,
+tags, metadata, search results, graphs, veins, lodes, and assembled context
+current on every authorized device where the relevant clusters are available.
+
+Hosting the PWA frontend and providing cluster synchronization are distinct
+product capabilities. Technical architecture determines how the hosted
+frontend reaches local cluster capabilities, where indexing and knowledge
+services execute, and whether relational convergence uses synchronized state,
+events, local reconstruction, or another dependable mechanism.
 
 ## The Mature Experience
 
@@ -149,8 +176,9 @@ authorized workflow deliberately materializes it as durable knowledge. Its
 materialized file then becomes canonical while retaining its generation
 provenance.
 
-External tools may change cluster files. Azurite must recognize those changes
-and reconcile its context without becoming a second competing source of truth.
+External tools and synchronized devices may change cluster files. Azurite must
+recognize those changes and automatically reconcile affected knowledge and
+relationships without becoming a second competing source of truth.
 
 ## Context Fabric And Agents
 
@@ -170,16 +198,19 @@ can return to Azurite with their actor, source, and history intact.
 
 ## Ownership And Distribution
 
-Azurite should offer a polished open-source self-hosted edition and may offer a
-hosted production edition with accounts, effectively unlimited clusters, easy
-cross-device continuity, and subscription value. Daniel's daily use should run
-through the real production product so dogfooding continuously tests the promise
-made to future users.
+Azurite should offer a polished open-source self-hosted product environment
+using the same PWA frontend, plus an Azurite-hosted production PWA frontend. An
+optional hosted synchronization service can provide account-based, Obsidian
+Sync-style continuity for effectively unlimited clusters, bounded by chosen
+storage and service realities rather than artificial organization limits.
+Daniel's daily use should run through the real production product so dogfooding
+continuously tests the promise made to future users.
 
-Self-hosted, locally hosted, Tailscale-accessible, and hosted deployments must
-preserve the same foundational file-sovereignty and portability promises.
-Private operation is the default posture. Sharing and collaboration are
-deliberate capabilities.
+Self-hosted, locally hosted, Tailscale-accessible, and Azurite-hosted frontend
+delivery must preserve the same local-file sovereignty and portability
+promises. Subscription or synchronization never changes the canonical role of
+local cluster files. Private operation is the default posture. Sharing and
+collaboration are deliberate capabilities.
 
 ## Independent Product Identity
 
@@ -202,6 +233,12 @@ The first two establish the floor. The third is Azurite's own territory.
 - Agent and automation activity remains attributable, inspectable, and
   governable.
 - The context fabric has no mandatory assistant personality.
+- The PWA's product role is exclusively frontend presentation and interaction.
+- Hosted frontend delivery and hosted cluster synchronization remain distinct
+  capabilities.
+- A synchronized file change automatically converges the affected knowledge and
+  relationships across authorized devices where the relevant clusters are
+  available.
 - Rich experiences and Modules may use serious application state while keeping
   canonical knowledge and source material independently usable.
 - Product decisions define user outcomes. Technical architecture owns the
@@ -217,6 +254,8 @@ The first two establish the floor. The third is Azurite's own territory.
   scoped lode experiences.
 - Human-configurable autonomy levels for agent initiation, canonical writeback,
   and cross-system work.
-- The hosted edition, subscription model, collaboration model, and movement
-  between hosted and self-hosted operation.
+- The exact synchronized product state, if any, required beyond cluster files
+  for dependable cross-device continuity.
+- The subscription model, collaboration model, and movement between self-hosted
+  and Azurite-hosted frontend and synchronization services.
 - The product boundary and promises for coaching and therapy-support Modules.
