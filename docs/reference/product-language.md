@@ -25,9 +25,11 @@ terms part of Azurite's vocabulary.
 
 Cluster is established mineral language, including for azurite crystal
 groupings. An **Azurite Cluster** is one coherent, portable knowledge domain.
-Markdown files remain its canonical, portable knowledge source. Azurite may
-maintain rich application state and rebuildable derived state around those
-files without compromising their independent use.
+Markdown files remain the canonical, portable representation of
+Azurite-authored knowledge. Original code, PDFs, images, recordings, datasets,
+and other native files remain canonical source artifacts for their own content.
+Azurite may maintain rich application state and rebuildable derived state around
+those files without compromising their independent use.
 
 A cluster can be a dedicated notes collection, a project Git repository,
 LLMWiki, or another knowledge collection. It remains usable through ordinary
@@ -52,7 +54,15 @@ The precise relationship type remains visible. Examples include:
 - agent-session relationships;
 - inferred semantic relationships.
 
-Relationship origin and certainty remain part of the product truth:
+Relationship origin and lifecycle are separate product truths. Authored,
+observed, and inferred describe origin and certainty. Candidate, proposed, and
+materialized describe lifecycle. A materialized inferred vein remains inferred.
+
+Azurite may propose candidate relationships before they become veins. A
+candidate has no graph or lode authority until it is deliberately materialized
+under the user's rules.
+
+Relationship origin and certainty remain visible after materialization:
 
 - **Authored** relationships express deliberate human or agent intent.
 - **Observed** relationships report a factual connection found in source or
@@ -70,6 +80,11 @@ connecting two clusters is enough for those clusters to form a lode. The term
 extends transitively across a connected group as further clusters join through
 cross-cluster veins.
 
+Only a materialized cross-cluster vein participates in lode topology. Search
+similarity and candidate or proposed relationships do not silently fuse
+clusters into a lode. A materialized inferred vein can participate while
+remaining visibly inferred and explainable.
+
 Lode describes a product relationship between independently usable clusters.
 It does not prescribe storage, indexing, synchronization, graph, or deployment
 architecture, and it does not merge the participating clusters into one
@@ -85,9 +100,30 @@ Relationship visibility and content access are separate product decisions.
 Implementations must preserve that distinction when they make cross-cluster
 knowledge discoverable or actionable.
 
+## Context Fabric
+
+The **context fabric** is the living continuity of file-owned knowledge,
+original source material, relationships, history, active work, and authorized
+context across clusters, lodes, devices, people, agents, automations, and time.
+
+Azurite maintains and routes this fabric. Agents and automations notice,
+interpret, decide, and act through it. The term does not give Azurite itself a
+mandatory assistant persona or imply that every context source is visible to
+every participant.
+
+## Azurite Module
+
+An **Azurite Module** is a user-installable extension that adds a focused
+product capability, workflow, view, integration, knowledge behavior, or agent
+environment. Modules inherit Azurite's file-sovereignty, provenance,
+authorization, and portability promises.
+
+Use **Module** for the user-visible extension concept. Use terms such as
+component, package, service, and subsystem for code architecture so product and
+engineering language remain unambiguous.
+
 ## Reserved And Rejected Terms
 
-- **Modules** remains the user-facing term for installable Azurite extensions.
 - **Vault** belongs to Obsidian and may appear only when describing an external
   capability benchmark or interoperability context.
 - **Constellation** was considered for connected clusters and rejected because

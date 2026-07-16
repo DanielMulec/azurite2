@@ -180,3 +180,30 @@ the entry template live in `docs/research-sources.md`.
   Markdown files.
 - Caveats: Reference behavior and architecture only; Azurite's product direction
   remains its own.
+
+### Obsidian Accepted File Formats
+
+- URL: https://obsidian.md/help/Files%2Band%2Bfolders/Accepted%2Bfile%2Bformats
+- Accessed: 2026-07-16
+- Area: Knowledge benchmark and original source artifacts
+- Use when: Researching the file and attachment capability included in
+  Azurite's Obsidian-parity benchmark.
+- Notes: Obsidian supports Markdown, Bases, JSON Canvas, common image, audio,
+  video, and PDF formats, and can embed many of those files in notes.
+- Caveats: Azurite defines its own supported formats, representations, and
+  cluster semantics. This source establishes benchmark capability only.
+
+### Obsidian Core Plugins
+
+- URL: https://obsidian.md/help/Plugins/Core%2Bplugins
+- Accessed: 2026-07-16
+- Area: Obsidian functional-parity inventory
+- Use when: Building the researched inventory of Obsidian knowledge-management
+  capabilities that Azurite must assign to core, official Modules, ecosystem
+  Modules, or an explicit departure.
+- Notes: Lists first-party capabilities including backlinks, Bases, bookmarks,
+  Canvas, commands, daily notes, file exploration, recovery, graph view,
+  outgoing links, properties, quick switching, search, tags, templates, Sync,
+  and saved workspaces.
+- Caveats: Presence in Obsidian does not determine Azurite's interface, product
+  vocabulary, representation, or implementation mechanism.

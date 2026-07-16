@@ -4,11 +4,11 @@
 
 Azurite currently has a working markdown discovery, reading, editing, manual
 save, URL navigation, and browser draft-recovery baseline. Product direction is
-documented in `docs/product-vision.md`, current architecture in
-`docs/technical-architecture.md`, engineering rules in
+documented in `docs/product-vision.md` and `docs/product-capability-map.md`,
+current architecture in `docs/technical-architecture.md`, engineering rules in
 `docs/engineering-standards.md`, and the product-slice workflow in
-`docs/working-agreement.md`. Active, planned, and completed slices are indexed in
-`docs/slices/README.md`; reusable research sources are indexed in
+`docs/working-agreement.md`. Active, planned, and completed slices are indexed
+in `docs/slices/README.md`; reusable research sources are indexed in
 `docs/research-sources.md`.
 
 ## Working Guidelines

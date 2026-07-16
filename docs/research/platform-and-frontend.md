@@ -130,18 +130,6 @@ the entry template live in `docs/research-sources.md`.
   cases.
 - Caveats: Azurite also intends to support selected GFM extensions.
 
-### File Over App
-
-- URL: https://stephango.com/file-over-app
-- Accessed: 2026-07-07
-- Area: Product data philosophy
-- Use when: Reconfirming why Azurite keeps markdown files as the canonical
-  knowledge source instead of letting app state own user knowledge.
-- Notes: Articulates the principle that durable digital artifacts should be
-  files users control, in readable formats.
-- Caveats: A philosophy source, not an implementation guide; pair with concrete
-  filesystem, indexing, and editor decisions.
-
 ### Obsidian Data Storage
 
 - URL: https://obsidian.md/help/data-storage

@@ -12,9 +12,14 @@ proposal.
 
 ## Canonical Knowledge And Persistence
 
-- Markdown files in the selected cluster remain the canonical knowledge source.
+- Markdown files remain canonical for authored Markdown knowledge and the
+  current note subsystem. The destination truth model is defined in the
+  [product vision](../product-vision.md#canonical-product-truth).
+- Original code, PDFs, images, recordings, datasets, and other accepted native
+  files remain canonical source artifacts for their own content. Ingestion and
+  conversion never silently replace or destroy them.
 - Browser storage, indexes, caches, telemetry, and UI state do not become a
-  second canonical note store.
+  second canonical note or source-artifact store.
 - Existing-note writes use the shared content-hash conflict contract and must
   not silently overwrite a newer disk version.
 - Unsaved drafts remain scoped by cluster ID and note ID, survive supported

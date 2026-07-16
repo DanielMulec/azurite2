@@ -2,9 +2,15 @@
 
 ## Purpose
 
-Azurite treats markdown files as the source of truth for knowledge content.
-Workspace and note rules define which files count as notes, how note IDs are
-formed, and which workspace paths are reserved for metadata or external tools.
+The current Azurite note subsystem treats Markdown files as canonical document
+content. Workspace and note rules define which files currently count as notes,
+how note IDs are formed, and which workspace paths are reserved for metadata or
+external tools.
+
+This implementation reference does not define the destination artifact model
+for clusters. The product truth for original native files, authored Markdown,
+durable product state, and derived intelligence lives in the
+[product vision](../product-vision.md#canonical-product-truth).
 
 The main code source of truth is `@azurite/shared`.
 
